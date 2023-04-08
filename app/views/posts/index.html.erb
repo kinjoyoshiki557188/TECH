@@ -1,1 +1,5 @@
-こんにちは
+<% @posts.each do |i| %>
+  タイトル：<%= i.title %><br>
+  内容：<%= i.content %><br>
+  投稿者名：<%= i.name %><br><br>
+<% end %>

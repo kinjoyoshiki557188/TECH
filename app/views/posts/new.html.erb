@@ -1,18 +1,6 @@
-<h1>質問投稿画面</h1>
-
-<%= form_with(model: @post, url: new_post_path) do |form| %>
-
-  <div class="field">
-    <%= form.label :title %>
-    <%= form.text_field :title %>
-  </div>
-
-  <div class="field">
-    <%= form.label :content %>
-    <%= form.text_area :content %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
-  </div>
+<%= form_with model: @posts, local: true do |form| %>
+  <%= form.text_field :title, placeholder: "タイトル" %><br>
+  <%= form.text_area :content, placeholder: "質問内容" %><br>
+  <%= form.text_field :name, placeholder: "投稿者名" %><br>
+  <%= form.submit 'POST'%>
 <% end %>
