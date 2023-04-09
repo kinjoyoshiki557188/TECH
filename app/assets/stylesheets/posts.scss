@@ -33,12 +33,13 @@ header {
   align-items: center;
 }
 
-.logo {
+.logo a {
   font-size: 23px;
   letter-spacing: 1.8px;
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
   color: #FFFFFF;
+  text-decoration: none;
 }
 
 .post-button {
